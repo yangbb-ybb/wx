@@ -1,25 +1,47 @@
+<view class="info">这种动画直接通过css3 animate的 tranform:translate完成</view>
 <view class="line_loading"></view>
+<view class="info">图片旋转 css3 animate 可以直接把 动画的时间调长清楚的看到原理</view>
 <view class="loading_box">
+  <view class="loading1 loading1-delay"></view>
   <view class="loading1"></view>
-</view>
+</view> 
 
-<!--<view class="loading_box">
+
+<!-- 
+不好看  直接注释掉  得了
+<view class="loading_box">
   <view class="loading2"></view>
-</view>-->
+</view>
+  -->
+<view class="info">
+ css3 动画 放大缩小通过  animation-delay: 0.5s;的时间不同得到
+</view>
 <view class="loading_box">
   <view class="loading3 loading3_1"></view>
   <view class="loading3 loading3_2"></view>
   <view class="loading3 loading3_3"></view>
 </view>
+
+<view class="info">
+  两个方块 调用的用一个 动画 另一个 延时1半的 动画时间 达到刚好对称 
+</view>
 <view class="loading_box">
   <view class="cube cube1"></view>
   <view class="cube cube2"></view>
+</view>
+<view class="info">
+  高方向上通过 scaleY() 进行特定 方向上的缩放，在通过延时 进行达到效果
 </view>
 <view class="loading_box">
   <view class="pulse pulse_1"></view>
   <view class="pulse pulse_2"></view>
   <view class="pulse pulse_3"></view>
   <view class="pulse pulse_4"></view>
+</view>
+<view class="info">
+  动画设计 左边走50%+50%等待
+          右边等待50% 走50%
+          永远 不会重复 厉害
 </view>
 <view class="loading_box">
   <view class="knock knock_first"></view>
@@ -28,11 +50,18 @@
   <view class="knock"></view>
   <view class="knock knock_last"></view>
 </view>
+<view class="info">
+  css3 动画 淡入淡出+缩放   来回播放
+</view>
 <view class="loading_box">
   <view class="loading_fade_circle"></view>
 </view>
+<view class="info">
+  这个 也厉害了 用3d 原理 目前 想不出...抱歉 缺乏3D设计思维
+</view>
 <view class="loading_box">
   <view class="loading_rotate_cube_parent">
+    <view class="loading_rotate_cube"></view>
+  </view> 
   <view class="loading_rotate_cube"></view>
-  </view>
-</view>
+</view> 
