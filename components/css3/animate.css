@@ -1,0 +1,55 @@
+/**具体请看 http://leaverou.github.io/animatable/*/
+/*区别对待*/
+#on-hover:checked ~ div[role="main"] > a[data-property]:not(:hover):not(:target), body.in-page a[data-property]:not(:target) {
+    animation: none !important;
+}
+/**
+    淡入淡出动画
+*/
+@keyframes opacity {
+    from {
+        box-shadow: inset 0 0 75px 75px slategrey, 0 0 0 slategrey;
+    }
+    to{
+        box-shadow: inset 0 0 35px 35px transparent, 0 0 75px 50px transparent  ;
+    }
+}
+/**
+    上下齿轮
+*/
+/*背景色*/
+.background{
+    background-color: #E04332;
+    background-repeat: repeat-x;
+    background-size: 24px 300px;
+    background-image: linear-gradient(135deg, slategray 25%, transparent 25%), linear-gradient(45deg, transparent 75%, slategray 75%), linear-gradient(45deg, slategray 25%, transparent 25%), linear-gradient(135deg, transparent 75%, slategray 75%);
+}
+@keyframes shadow{
+    0% {
+        background-position: 3px 0, 3px 0, 15px -150px, 15px -150px;
+    }
+    100% {
+        background-position: 3px -70px, 3px -70px, 15px -80px, 15px -80px;
+    }
+}
+/*
+    调整高度
+*/
+@keyframes height {
+    0% {
+        height: 150px;
+    }
+    100% {
+        height: 0;
+    }
+}
+/*文字阴影*/
+@keyframes shadow {
+    0% {
+        text-shadow: 0 0 black;
+    }
+
+    100% {
+        text-shadow: 20px 20px 10px rgba(0,0,0,.5);
+    }
+}
