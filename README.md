@@ -11,3 +11,5 @@
 </pre>
 ### bc  
 添加了 一点 canvas 功能，主要是将canvas里面的 方法封装了起来，让我只关心数据上的表现
+
+测试git rebase
